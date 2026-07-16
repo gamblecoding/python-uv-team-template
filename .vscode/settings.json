@@ -1,0 +1,26 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "python.terminal.activateEnvInTerminal": true,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "editor.guides.indentation": true,
+  "scm.decorations.enabled": true,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell (uv-enforced)": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": ["-NoExit", "-File", "${workspaceFolder}/.vscode/enable-uv-warnings.ps1"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell (uv-enforced)"
+}
+
