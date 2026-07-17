@@ -4,8 +4,7 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit",
-      "source.fixAll.ruff": "explicit"
+      "source.organizeImports": "explicit"
     }
   },
   "files.insertFinalNewline": true,
@@ -14,12 +13,11 @@
   "editor.guides.indentation": true,
   "scm.decorations.enabled": true,
   "terminal.integrated.profiles.windows": {
-    "PowerShell (uv-enforced)": {
-      "source": "PowerShell",
+    "PowerShell 7 (uv-enforced)": {
+      "path": "pwsh.exe",
       "icon": "terminal-powershell",
       "args": ["-NoExit", "-File", "${workspaceFolder}/.vscode/enable-uv-warnings.ps1"]
     }
   },
-  "terminal.integrated.defaultProfile.windows": "PowerShell (uv-enforced)"
+  "terminal.integrated.defaultProfile.windows": "PowerShell 7 (uv-enforced)"
 }
-
