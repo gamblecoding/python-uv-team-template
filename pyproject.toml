@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Team template for Python development with uv, Ruff, pytest, and VS Code"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
 dependencies = []
 
 [dependency-groups]
