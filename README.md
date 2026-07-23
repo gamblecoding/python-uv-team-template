@@ -74,12 +74,10 @@ Copy-Item .env.example .env
 
 ## テンプレート利用後の変更箇所
 
-1. `pyproject.toml` の `name`、`description`、ライセンスを更新する
+1. `pyproject.toml` の `name`、`description`を更新する
 2. このREADMEをプロジェクト固有の概要・前提条件・起動方法に書き換える
 3. `.env.example` に必要な変数名を追加する
 4. `uv lock` を実行し、`pyproject.toml` と `uv.lock` をコミットする
 
-## ライセンス
 
-MIT License
 
