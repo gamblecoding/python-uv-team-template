@@ -1,6 +1,6 @@
 # Python uv Team Template
 
-チーム共通プレイブックに沿った、Pythonプロジェクトの開始用テンプレートです。`uv` による環境・依存関係管理、Ruffによる静的検査と整形、pytest、VS Code共通設定、GitHub Actionsを含みます。
+チーム共通プレイブックに沿った、Pythonプロジェクトの開始用テンプレートです。`uv` による環境・依存関係管理、Ruffによる静的検査と整形、pytest、VS Code共通設定、Bitbucket Pipelinesを含みます。
 
 ## 前提条件
 
@@ -10,10 +10,10 @@
 
 ## このテンプレートから始める
 
-GitHubの「Use this template」から新しいリポジトリを作成し、次を実行します。
+Bitbucket CloudでこのテンプレートリポジトリをImportして新しいリポジトリを作成し、次を実行します。
 
 ```powershell
-git clone https://github.com/<organization>/<repository>.git
+git clone https://bitbucket.org/<workspace>/<repository>.git
 cd <repository>
 uv sync
 uv run src/main.py
@@ -61,7 +61,7 @@ Copy-Item .env.example .env
 
 ```text
 .
-├── .github/workflows/ci.yml
+├── bitbucket-pipelines.yml
 ├── .vscode/
 ├── src/main.py
 ├── tests/test_main.py
@@ -78,6 +78,5 @@ Copy-Item .env.example .env
 2. このREADMEをプロジェクト固有の概要・前提条件・起動方法に書き換える
 3. `.env.example` に必要な変数名を追加する
 4. `uv lock` を実行し、`pyproject.toml` と `uv.lock` をコミットする
-
 
 

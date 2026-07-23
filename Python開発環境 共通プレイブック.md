@@ -140,7 +140,7 @@ PowerShell
 
 cd C:\projects
 
-git clone https://github.com/your-team/your-project.git
+git clone https://bitbucket.org/your-workspace/your-project.git
 
 cd your-project
  

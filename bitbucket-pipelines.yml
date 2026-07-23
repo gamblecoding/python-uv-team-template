@@ -1,0 +1,26 @@
+image: python:3.10-slim
+
+definitions:
+  caches:
+    uv: /root/.cache/uv
+  steps:
+    - step: &quality
+        name: Quality
+        caches:
+          - pip
+          - uv
+        script:
+          - pip install uv
+          - uv lock --check
+          - uv sync --locked --all-groups
+          - uv run ruff check .
+          - uv run ruff format --check .
+          - uv run pytest
+
+pipelines:
+  branches:
+    main:
+      - step: *quality
+  pull-requests:
+    "**":
+      - step: *quality
